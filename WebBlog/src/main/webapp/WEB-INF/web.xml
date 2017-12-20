@@ -35,7 +35,7 @@
 		XXX就是DispatcherServlet的名字，该文件中将配置两项重要的mvc特性：HandlerMapping,负责为DispatcherServlet这个前端控制器的请求查找Controller； 
 		ViewResolver,负责为DispatcherServlet查找ModelAndView的视图解析器。 此处使用指定的配置文件spring-mvc.xml -->
 	<servlet>
-		<servlet-name>contacts</servlet-name>
+		<servlet-name>SpringMVC</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
@@ -44,7 +44,7 @@
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>contacts</servlet-name>
+		<servlet-name>SpringMVC</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 

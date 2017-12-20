@@ -3,6 +3,7 @@ encoding//src/main/resources/jdbc.properties=UTF-8
 encoding//src/main/resources/log4j.properties=UTF-8
 encoding//src/main/sql/schema.sql=UTF-8
 encoding//src/main/webapp/WEB-INF/views/login/login.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/love/love.jsp=UTF-8
 encoding//src/main/webapp/index.jsp=UTF-8
 encoding/<project>=UTF-8
 encoding/generatorConfig.xml=UTF-8

@@ -173,6 +173,22 @@
 	<build>
 		<!-- 将WebProject项目打包成WebBlog.war自动部署到tomcat服务器的webapps目录下面 -->
 		<finalName>WebBlog</finalName>
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.xml</include>
+				</includes>
+			</resource>
+
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**/*.properties</include>
+					<include>**/*.xml</include>
+				</includes>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.cargo</groupId>

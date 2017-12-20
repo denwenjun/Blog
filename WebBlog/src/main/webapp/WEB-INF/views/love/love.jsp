@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ include file="/WEB-INF/views/include/taglib.jsp" %>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>欢迎进入john的个人微博</title> 
@@ -26,7 +26,7 @@ body {
 }
 </style>
 
-<script type="text/javascript" src="js/ge1doot.js"></script>
+<script type="text/javascript" src="${ctxStatic}/js/ge1doot.js"></script>
 <script type="text/javascript">
 
 "use strict";
@@ -249,7 +249,7 @@ body {
 		load : function (data) {
 			window.addEventListener('load', function () {
 				ge1doot.loadJS(
-					"js/imageTransform3D.js",
+					"${ctxStatic}/js/imageTransform3D.js",
 					init, data
 				);
 			}, false);
@@ -258,21 +258,21 @@ body {
 })().load({
 	imgdata:[
 		// north
-		{img:'imgs/1.jpg', x:-1000, y:0, z:1500, nx:0, nz:1},
-		{img:'imgs/2.jpg', x:0,     y:0, z:1500, nx:0, nz:1},
-		{img:'imgs/3.jpg', x:1000,  y:0, z:1500, nx:0, nz:1},
+		{img:'${ctxStatic}/imgs/1.jpg', x:-1000, y:0, z:1500, nx:0, nz:1},
+		{img:'${ctxStatic}/imgs/2.jpg', x:0,     y:0, z:1500, nx:0, nz:1},
+		{img:'${ctxStatic}/imgs/3.jpg', x:1000,  y:0, z:1500, nx:0, nz:1},
 		// east
-		{img:'imgs/4.jpg', x:1500,  y:0, z:1000, nx:-1, nz:0},
-		{img:'imgs/5.jpg', x:1500,  y:0, z:0, nx:-1, nz:0},
-		{img:'imgs/6.jpg', x:1500,  y:0, z:-1000, nx:-1, nz:0},
+		{img:'${ctxStatic}/imgs/4.jpg', x:1500,  y:0, z:1000, nx:-1, nz:0},
+		{img:'${ctxStatic}/imgs/5.jpg', x:1500,  y:0, z:0, nx:-1, nz:0},
+		{img:'${ctxStatic}/imgs/6.jpg', x:1500,  y:0, z:-1000, nx:-1, nz:0},
 		// south
-		{img:'imgs/7.jpg', x:1000,  y:0, z:-1500, nx:0, nz:-1},
-		{img:'imgs/8.jpg', x:0,     y:0, z:-1500, nx:0, nz:-1},
-		{img:'imgs/9.jpg', x:-1000, y:0, z:-1500, nx:0, nz:-1},
+		{img:'${ctxStatic}/imgs/7.jpg', x:1000,  y:0, z:-1500, nx:0, nz:-1},
+		{img:'${ctxStatic}/imgs/8.jpg', x:0,     y:0, z:-1500, nx:0, nz:-1},
+		{img:'${ctxStatic}/imgs/9.jpg', x:-1000, y:0, z:-1500, nx:0, nz:-1},
 		// west
-		{img:'imgs/10.jpg', x:-1500, y:0, z:-1000, nx:1, nz:0},
-		{img:'imgs/11.jpg', x:-1500, y:0, z:0, nx:1, nz:0},
-		{img:'imgs/12.jpg', x:-1500, y:0, z:1000, nx:1, nz:0}
+		{img:'${ctxStatic}/imgs/10.jpg', x:-1500, y:0, z:-1000, nx:1, nz:0},
+		{img:'${ctxStatic}/imgs/11.jpg', x:-1500, y:0, z:0, nx:1, nz:0},
+		{img:'${ctxStatic}/imgs/12.jpg', x:-1500, y:0, z:1000, nx:1, nz:0}
 		
 	],
 	structure:[
@@ -373,8 +373,7 @@ body {
 </head> 
 <body>
 <div style="text-align:center;clear:both;">
-<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
-<script src="/follow.js" type="text/javascript"></script>
+<%@ include file="/WEB-INF/views/include/head.jsp" %>
 </div>
 
 <canvas id="canvas">你的浏览器不支持HTML5画布技术，请使用谷歌浏览器。</canvas>

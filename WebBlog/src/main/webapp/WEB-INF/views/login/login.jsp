@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<!-- saved from url=(0032)https://dribbble.com/session/new -->
-<html lang="en">
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ include file="/WEB-INF/views/include/taglib.jsp" %>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -10,7 +9,7 @@
 	content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 <title>登录界面</title>
 <link rel="stylesheet" media="screen"
-	href="./css/main.css">
+	href="${ctxStatic}/css/main.css">
 </head>
 
 <body>
@@ -18,14 +17,14 @@
 	<div id="main-container">
 		<div id="main">
 			<h1>
-				<a href="https://dribbble.com/"><img alt="Dribbble"
-					src="./css/logo.png"></a>
+				<a href="love"><img alt="Dribbble"
+					src="${ctxStatic}/css/logo.png"></a>
 			</h1>
 
 			<h2>登录</h2>
 
 			<div id="form-oldschool">
-				<form action="https://dribbble.com/session" accept-charset="UTF-8"
+				<form action="#" accept-charset="UTF-8"
 					method="post">
 					<input name="utf8" type="hidden" value="✓"><input
 						type="hidden" name="authenticity_token"
@@ -51,7 +50,7 @@
 		</div>
 	</div>
 
-	<script src="./css/jquery.min.js"></script>
+	<script src="${ctxStatic}/js/jquery.min.js"></script>
 	<!-- jquery failover -->
 	<script>
   if (typeof jQuery == 'undefined') {
@@ -62,9 +61,8 @@
 
 	<script>$("input:text:visible:first").focus();</script>
 	<script
-		src="./css/login.js"></script>
+		src="${ctxStatic}/js/login.js"></script>
 	<script>
-    Dribbble.FacebookLogin.setup();
   </script>
 
 
