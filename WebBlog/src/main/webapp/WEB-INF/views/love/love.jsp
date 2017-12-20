@@ -373,7 +373,6 @@ body {
 </head> 
 <body>
 <div style="text-align:center;clear:both;">
-<%@ include file="/WEB-INF/views/include/head.jsp" %>
 </div>
 
 <canvas id="canvas">你的浏览器不支持HTML5画布技术，请使用谷歌浏览器。</canvas>
