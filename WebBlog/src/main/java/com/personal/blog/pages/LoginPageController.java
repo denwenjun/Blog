@@ -8,10 +8,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping(value = "/login")
 public class LoginPageController {
 
-	public static final String LOGIN_PAGE = "login";
+	public static final String LOGIN_PAGE = "/views/login/login";
 
 	@RequestMapping( method = RequestMethod.GET)
 	public String getLoginPage() {
+		System.out.print(LOGIN_PAGE);
 		return LOGIN_PAGE;
 	}
 }

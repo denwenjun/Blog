@@ -12,6 +12,8 @@ public class DefaultPageController {
 
 	@RequestMapping( method = RequestMethod.GET)
 	public String getLoginPage() {
+		
+		System.out.print(DEFAULT_PAGE);
 		return DEFAULT_PAGE;
 	}
 }

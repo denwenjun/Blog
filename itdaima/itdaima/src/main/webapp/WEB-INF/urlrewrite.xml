@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.2//EN" "\\urlrewrite3.2.dtd">
+
+<urlrewrite>
+    <!--<rule>
+        <from>^/t/talk/p([0-9]+).htm$</from>
+        <to type="forward">/t/talk.htm?pageNo=$1</to>
+    </rule>
+    <rule>
+        <from>^/t/blog/p([0-9]+).htm$</from>
+        <to type="forward">/t/blog/p.htm?pageNo=$1</to>
+    </rule>-->
+    <rule>
+        <from>^/t/blogView/([0-9]+).htm$</from>
+        <to type="forward">/t/blogView.htm?id=$1</to>
+    </rule>
+
+
+</urlrewrite>
