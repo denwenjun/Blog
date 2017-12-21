@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+
+    <description>JSTL 1.1 functions library</description>
+    <display-name>JSTL functions article</display-name>
+    <tlib-version>1.1</tlib-version>
+    <short-name>article</short-name>
+    <uri>http://java.sun.com/jsp/jstl/functionss</uri>
+    <function>
+        <description>首页获取article数据</description>
+        <name>getArticleList</name>
+        <function-class>com.itdaima.modules.sys.utils.ArticleUtils</function-class>
+        <function-signature>java.util.List getArticleList(java.lang.String,int)</function-signature>
+        <example>${fns:getArticleList()}</example>
+    </function>
+    <function>
+        <description>首页获取说说数据</description>
+        <name>getSayList</name>
+        <function-class>com.itdaima.modules.sys.utils.ArticleUtils</function-class>
+        <function-signature>java.util.List getSayList(int)</function-signature>
+        <example>${fns:getSayList()}</example>
+    </function>
+
+
+</taglib>
