@@ -24,8 +24,8 @@
 			<h2>登录</h2>
 
 			<div id="form-oldschool">
-				<form action="#" accept-charset="UTF-8"
-					method="post">
+				<form action="love" accept-charset="UTF-8"
+					method="get">
 					<input name="utf8" type="hidden" value="✓"><input
 						type="hidden" name="authenticity_token"
 						value="u8UV4wMFjb8OpMFmawrBXJmjJGPf0p6F/VW1B6Yz4iSQmj+nGuxXrruQ1RaCzCmOoV+8P83hBQayZBO+rNGLDg==">
